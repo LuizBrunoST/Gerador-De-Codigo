@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Gerador de códigos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/tema.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/w3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.10.1/ace.js"></script>
+</head>
+<body>
+    <div class="w3-card-4">
+        <div class="w3-bar w3-theme w3-card">
+            <span class="w3-bar-item">PHP >> Conexão com banco de dados</span>
+        </div>
+        <div class="w3-container w3-theme-d1">
+            <label for="server">Server:</label>
+            <input class="w3-input w3-theme w3-border-theme" value="localhost" type="text" placeholder="Entre com o server ..." id="server">
+            <label for="user">Usuário:</label>
+            <input class="w3-input w3-theme w3-border-theme" value="root" type="text" placeholder="Entre com o usuário ..." id="user">
+            <label for="pass">Senha:</label>
+            <input class="w3-input w3-theme w3-border-theme" type="text" placeholder="Entre com a senha ..." id="pass">
+            <label for="myDB">MyDB:</label>
+            <input class="w3-input w3-theme w3-border-theme" type="text" placeholder="Entre com o nome do banco de dados" id="myDB">
+        </div>
+        <div class="w3-container w3-theme-action w3-padding">
+            <button class="w3-right w3-button w3-round w3-theme" id="btn-gerar">Gerar</button>
+        </div>  
+    </div>
+    <div class="w3-card-4" style="width: 100%; position: relative;">
+        <div id="editor"></div>
+    </div>
+
+    
+<script src="js/main.js"></script>
+</body>
+</html>
